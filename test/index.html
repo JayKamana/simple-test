@@ -4,6 +4,43 @@
 	<title></title>
 </head>
 <body>
-	<h1>Hello beautifulll World</h1>
+   <form action="http://www.example.com/review.php"method="get">
+	<fieldset>
+		<legend>Your Details:</legend>
+		<label>Name:
+			<input type="text" name="name">
+		</label><br />
+		<label>Email:
+			<input type="email" name="email">
+		</label>
+	</fieldset>
+	<br>
+
+	<fieldset>
+		<legend>Your Review</legend>
+		<p>How did you hear about us? <select name="sources" size="1"
+		multiple="multiple"> 
+		<option value = "Google" selected="selected">Google</option>
+		<option value = "Facebook">Facbook</option>
+		<option value = "Reddit">Reddit</option>
+		<option value = "Twitter">Twitter</option>
+		<option value = "Quora">Quora</option>
+		</select></p>
+
+		<p>Would you visit again?<br>
+		<input type="radio" name="suggest" value="Yes" checked="checked">Yes
+		<input type="radio" name="suggest" value="No"> No
+		<input type="radio" name="suggest" value="Maybe" >Maybe
+		</p>
+
+		<p>Comments:<br>
+		<textarea name="Comments" cols="20" rows="4" placeholder="Enter your comments here"></textarea>
+		</p>
+
+		<p><input type="checkbox" name="offers" checked="checked"> Sign me up for email updates<br>
+
+		<input type="submit" name="submit" value="Submit Review"></p>
+	</fieldset>
+   </form>	
 </body>
 </html>
